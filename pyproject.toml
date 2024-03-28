@@ -1,0 +1,32 @@
+[build-system]
+requires = [
+  "setuptools",
+  "setuptools-scm",
+  "scipy",
+  "numpy"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pylinode"
+version = "0.0.1"
+authors = [
+    { name = "Maksim Surov", email = "surov.m.o@gmail.com" }
+]
+description = "The library provides functions for solving linear ODE."
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["numeric", "ode", "integration"]
+license = { text = "GSL" }
+classifiers = ["Programming Language :: Python :: 3"]
+dependencies = [
+    "numpy>=1.22",
+    "scipy>=1.10",
+    "mpmath>=1.2"
+    'importlib-metadata; python_version>="3.10"',
+]
+
+[tool.pytest.ini_options]
+testpaths = [
+  "tests"
+]

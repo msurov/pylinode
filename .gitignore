@@ -1,0 +1,6 @@
+*.lyx~
+*.egg-info
+__pycache__
+build
+.venv
+.pytest_cache
